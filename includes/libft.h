@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abaker <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: abaker <HypeSwarm>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 14:47:29 by abaker            #+#    #+#             */
-/*   Updated: 2021/11/16 12:42:48 by abaker           ###   ########.fr       */
+/*   Updated: 2022/03/23 19:59:57 by abaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int		ft_toupper(int c);
 int		ft_isdigit(int c);
 int		ft_tolower(int c);
 int		ft_isalnum(int c);
+int		ft_charsize(int c);
 char	*ft_strchr(const char *s, int c);
 int		ft_strichr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
