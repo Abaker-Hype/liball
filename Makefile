@@ -27,4 +27,4 @@ fclean: clean
 re: fclean all
 
 norm:
-	@norminette $(SRCS) $(INC)/*.h
+	@norminette $(SRCS) $(INC)
