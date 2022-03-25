@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strichr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abaker <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: abaker <abaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 10:32:11 by abaker            #+#    #+#             */
-/*   Updated: 2022/03/23 10:32:12 by abaker           ###   ########.fr       */
+/*   Updated: 2022/03/25 13:18:02 by abaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,10 @@ int	ft_strichr(const char *s, int c)
 
 	i = 0;
 	while (s && s[i])
+	{
 		if (s[i] == c)
 			return (i);
+		i++;
+	}
 	return (-1);
 }
