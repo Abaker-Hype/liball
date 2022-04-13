@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abaker <HypeSwarm>                         +#+  +:+       +#+        */
+/*   By: abaker <abaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 14:47:29 by abaker            #+#    #+#             */
-/*   Updated: 2022/04/06 22:12:03 by abaker           ###   ########.fr       */
+/*   Updated: 2022/04/13 12:10:03 by abaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strjoinfree(char *s1, char *s2, bool f1, bool f2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
+char	**ft_strarrayadd(char **array, char *line);
 void	ft_freearray(void **arry);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
