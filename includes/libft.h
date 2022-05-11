@@ -6,7 +6,7 @@
 /*   By: abaker <abaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 14:47:29 by abaker            #+#    #+#             */
-/*   Updated: 2022/04/13 12:10:03 by abaker           ###   ########.fr       */
+/*   Updated: 2022/04/15 12:06:03 by abaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int		ft_toupper(int c);
 int		ft_isdigit(int c);
 int		ft_tolower(int c);
 int		ft_isalnum(int c);
+bool	ft_iswhitespace(int c);
 int		ft_charsize(int c);
 char	*ft_strchr(const char *s, int c);
 int		ft_strichr(const char *s, int c);
