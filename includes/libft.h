@@ -6,7 +6,7 @@
 /*   By: abaker <abaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 14:47:29 by abaker            #+#    #+#             */
-/*   Updated: 2022/05/19 11:24:46 by abaker           ###   ########.fr       */
+/*   Updated: 2022/05/19 16:27:41 by abaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		ft_array_size(void **array);
 void	**ft_array_free(void **arry);
 void	**ft_array_append(void **array, void *add);
-void	**ft_array_join(void **a1, void **a2);
+void	**ft_array_join(void **a1, void **a2, bool free);
 
 #endif
