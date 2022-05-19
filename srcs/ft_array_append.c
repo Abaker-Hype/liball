@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_freearray.c                                     :+:      :+:    :+:   */
+/*   ft_array_append.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abaker <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: abaker <abaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/25 17:47:35 by abaker            #+#    #+#             */
-/*   Updated: 2022/01/25 17:47:40 by abaker           ###   ########.fr       */
+/*   Created: 2022/05/19 11:14:06 by abaker            #+#    #+#             */
+/*   Updated: 2022/05/19 11:25:34 by abaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_freearray(void **arry)
+void	**ft_array_append(void **array, void *add)
 {
-	int	i;
+	void	**new;
+	int		i;
 
-	i = 0;
-	while (arry[i])
-		free(arry[i++]);
-	free(arry);
+	i = ft_array_size(array);
+	new = ft_calloc(i + 2, sizeof(char *));
+	if (!new)
+		return (array);
+	new[i] = add;
+	while (i-- > 0)
+		new[i] = array[i];
+	if (array)
+		free(array);
+	return (new);
 }

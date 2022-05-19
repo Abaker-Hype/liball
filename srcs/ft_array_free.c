@@ -1,33 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strarrayadd.c                                   :+:      :+:    :+:   */
+/*   ft_array_free.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abaker <abaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/13 12:04:09 by abaker            #+#    #+#             */
-/*   Updated: 2022/04/13 12:09:28 by abaker           ###   ########.fr       */
+/*   Created: 2022/01/25 17:47:35 by abaker            #+#    #+#             */
+/*   Updated: 2022/05/19 11:21:18 by abaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_strarrayadd(char **array, char *line)
+void	**ft_array_free(void **arry)
 {
-	char	**new;
-	int		i;
+	int	i;
 
 	i = 0;
-	if (array)
-		while (array[i])
-			i++;
-	new = ft_calloc(i + 2, sizeof(char *));
-	if (!new)
-		return (array);
-	new[i] = line;
-	while (i-- > 0)
-		new[i] = array[i];
-	if (array)
-		free(array);
-	return (new);
+	while (arry[i])
+		free(arry[i++]);
+	free(arry);
+	return (NULL);
 }
