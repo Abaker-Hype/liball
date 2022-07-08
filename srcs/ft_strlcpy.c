@@ -6,7 +6,7 @@
 /*   By: abaker <abaker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 14:24:11 by abaker            #+#    #+#             */
-/*   Updated: 2022/06/21 12:36:52 by abaker           ###   ########.fr       */
+/*   Updated: 2022/06/21 16:21:05 by abaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 
-	if (!(dst || src))
+	if (!(dst && src))
 		return (0);
 	i = 0;
 	if (dstsize > 0)
